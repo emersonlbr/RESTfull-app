@@ -4,13 +4,13 @@ var express           = require('express'),
     methodOverride    = require('method-override'),
     // it removes any scripts on the blogs create body
     expressSanitizer  = require('express-sanitizer'),
-    mongoose          = require('mongoose'),
+    // mongoose          = require('mongoose'),
     app               = express();
 
 
 
 // APP CONFIG
-mongoose.connect('mongodb://localhost/rest_full', {useMongoClient: true});
+// mongoose.connect('mongodb://localhost/rest_full', {useMongoClient: true});
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: true}));
