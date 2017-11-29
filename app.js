@@ -144,6 +144,7 @@ app.delete('/blogs/:id', function(req, res){
 
 
 // SERVER
-app.listen(3000, function() {
+app.listen(process.env.PORT || 5000, function() {
   console.log("Server has started on port 3000");
 });
+
